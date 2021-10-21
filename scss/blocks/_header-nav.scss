@@ -1,0 +1,32 @@
+.header-nav {
+   padding: 20px 0;
+   background-color: #f9f9f9;
+   &__item-link {
+      font-weight: 500;
+      font-size: 15px;
+      color: $cl-txt;
+      transition: color 0.3s ease;
+
+      &:hover {
+         opacity: 0.8;
+      }
+   }
+}
+
+@include breakpoint-down ($max-md) {
+   .header-nav__item {
+      margin: 0 50px;
+      margin-bottom: 20px;
+   }
+}
+
+@include breakpoint-down (730px) {
+   .header-nav__list {
+      justify-content: center;
+   }
+   .header-nav__item {
+      margin: 0 50px;
+      margin-bottom: 15px;
+   }
+}
+

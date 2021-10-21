@@ -1,0 +1,97 @@
+.header {
+   padding: 30px 0;
+
+   &__form {
+      max-width: 500px;
+      width: 100%;
+      height: 42px;
+      padding: 0 15px;
+      border-radius: 12px;
+      border: 1px solid #D1D1D1;
+
+      &-txt {
+         font-weight: bold;
+         font-size: 15px;
+         line-height: 22px;
+         cursor: pointer;
+      }
+
+      &-input {
+         width: 250px;
+         font-weight: 300;
+         font-size: 14px;
+         padding: 7px;
+         border: none;
+         opacity: 0.7;
+      }
+
+      &-btn {
+         .bx-search {
+            font-size: 18px;
+         }
+      }
+   }
+
+   &__icons {
+      .bx {
+         font-size: 22px;
+         margin-left: 15px;
+
+         &--after:after {
+            position: absolute;
+            bottom: -3px;
+            left: -3px;
+            width: 13px;
+            height: 13px;
+            content: "4";
+            font-family: $font-poppins;
+            font-weight: 600;
+            font-size: 11px;
+            padding: 1.8px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: #E47B59;
+         }
+      }
+   }
+}
+
+.bx-chevron-down {
+   position: relative;
+   top: 4px;
+   font-size: 20px;
+   color: $cl-green;
+}
+
+@include breakpoint-down ($max-md) {
+   .header__inner {
+      display: block !important;
+      text-align: center;
+   }
+   .header__logo {
+      margin-bottom: 30px;
+   }
+   .header__form {
+      margin: 0 auto !important;
+      margin-bottom: 30px !important;
+   }
+}
+
+@include breakpoint-down (500px) {
+   .header__form-input {
+      max-width: 200px;
+      width: 100%;
+   }
+}
+
+@include breakpoint-down (430px) {
+   .header__form label {
+      max-width: 120px;
+   }
+}
+
+@include breakpoint-down (364px) {
+   .header__form label {
+      max-width: 100px;
+   }
+}

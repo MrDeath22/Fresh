@@ -1,0 +1,51 @@
+.header-top {
+   padding: 20px 0;
+
+   &__list {
+      border-bottom: 2px solid #F3F3F3;
+   }
+
+   &__item {
+      padding-bottom: 10px;
+
+      &-txt {
+         font-family: $font-open-sans;
+         font-size: 12px;
+         color: $cl-green;
+
+         &:not(:last-child) {
+            margin-right: 32px;
+         }
+
+         &:hover {
+            color: $cl-btn-border;
+         }
+      }
+      &-link {
+         font-family: $font-open-sans;
+         font-size: 12px;
+         margin-right: 32px;
+         color: $cl-txt;
+      }
+   }
+}
+
+.menu-btn {
+   display: none;
+   font-size: 26px;
+}
+
+@include breakpoint-down(648px) {
+   .header-top__item:nth-child(2) {
+      display: none;
+   }
+}
+
+@include breakpoint-down(648px) {
+   .header-top__item {
+      display: none;
+   }
+   .menu-btn {
+      display: block;
+   }
+}

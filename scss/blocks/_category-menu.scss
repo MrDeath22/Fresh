@@ -1,0 +1,37 @@
+.category {
+   padding: 50px 0;
+}
+
+.category__menu {
+   &-title {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 18px;
+   }
+
+   &-link {
+      display: block;
+      font-size: 14px;
+      text-decoration: underline;
+      margin-bottom: 12px;
+      color: $cl-green;
+   }
+
+   &-btn {
+      font-weight: bold;
+      font-size: 15px;
+      padding: 15px 20px;
+      padding-top: 12px;
+      margin-top: 38px;
+      border-radius: 12px;
+      color: $cl-txt;
+      background: #F5F5F5;
+
+      .bx {
+         position: relative;
+         top: 4px;
+         left: 5px;
+         font-size: 20px;
+      }
+   }
+}

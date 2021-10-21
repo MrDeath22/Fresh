@@ -1,0 +1,87 @@
+.category__banner-item {
+   width: 400px;
+   padding: 32px;
+   padding-top: 48px;
+   border-radius: 12px;
+   background-image: url(../../img/category-banner-img.svg);
+   background-color: #F4F8EC;
+
+   &:nth-child(1) {
+      margin-right: 30px;
+   }
+
+   &__txt {
+      font-weight: 600;
+      font-size: 12px;
+      color: $cl-green;
+      margin-bottom: 10px;
+   }
+
+   &__title {
+      font-weight: 600;
+      font-size: 22px;
+      margin-bottom: 96px;
+   }
+
+   &__btn {
+      font-weight: bold;
+      font-size: 15px;
+      padding: 12px 18px;
+      padding-top: 8px;
+      border: 2px solid $cl-green;
+      border-radius: 12px;
+      color: $cl-txt;
+
+      .bx {
+         position: relative;
+         top: 4px;
+         left: 5px;
+         font-size: 22px;
+         color: $cl-green;
+      }
+   }
+}
+
+@include breakpoint-down ($max-lg) {
+   .category__banner-list {
+      display: block !important;
+   }
+   .category__banner-item {
+      margin-right: 150px;
+      margin-bottom: 30px;
+   }
+}
+
+@include breakpoint-down ($max-md) {
+   .category__banner-item {
+      margin-right: 0;
+   }
+}
+
+@include breakpoint-down (692px) {
+   .category__menu {
+      margin-bottom: 30px;
+   }
+   .category__banner-item {
+      margin-left: 30px;
+   }
+}
+
+@include breakpoint-down (475px) {
+   .category__banner-item {
+      width: 350px;
+      margin: 0 15px;
+   }
+}
+
+@include breakpoint-down (430px) {
+   .category__banner-item {
+      width: 320px;
+   }
+}
+
+@include breakpoint-down (400px) {
+   .category__banner-item {
+      width: 280px;
+   }
+}
